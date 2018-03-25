@@ -1,0 +1,100 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'Open sans', sans-serif;
+  color: #666; }
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #fafafa; }
+
+.modal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 5em auto;
+  width: 400px;
+  height: 300px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-top: -100%;
+  -webkit-animation: show forwards;
+  animation: show forwards;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s; }
+  @media screen and (max-width: 500px) {
+    .modal {
+      margin: 1em;
+      width: auto; } }
+
+.modal__title {
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  line-height: 1.9;
+  font-size: 1.6em;
+  font-weight: normal;
+  background-color: #0ABF75; }
+  @media screen and (max-width: 650px) {
+    .modal__title {
+      font-size: 1.4em; } }
+
+.modal__footer {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%; }
+
+.fa-check {
+  color: #0ABF75;
+  padding-top: .7em;
+  text-align: center; }
+
+.modal__message {
+  position: absolute;
+  bottom: 2em;
+  padding: 0 .1em;
+  font-size: 1.2em;
+  text-align: center; }
+  @media screen and (max-width: 650px) {
+    .modal__message {
+      font-size: 1em; } }
+
+.footer {
+  position: absolute;
+  width: 100%;
+  padding: 1em;
+  bottom: 0;
+  background-color: #282D31; }
+
+.footer__author {
+  font-size: 1em;
+  color: #797D73; }
+  @media screen and (max-width: 650px) {
+    .footer__author {
+      font-size: .9em; } }
+
+.footer__link {
+  text-decoration: none;
+  border-bottom: 1px solid #ccc;
+  color: #ccc; }
+
+@-webkit-keyframes show {
+  100% {
+    margin-top: 5em; } }
+
+@keyframes show {
+  100% {
+    margin-top: 5em; } }
